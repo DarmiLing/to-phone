@@ -1,0 +1,226 @@
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+.bar .button3{
+    border-bottom: 0;
+}
+.title2{
+    line-height: 5.5rem;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    padding-left: 2rem;
+}
+.bar .back-button.hide, .bar .buttons .hide{
+    display: block;
+}
+.bar.bar-Borland{
+    background: #19adb9;
+    height: 5.5rem;
+}
+
+.portrait_img{
+    margin-top: 1.3rem;
+    width: 1.25rem;
+    height: 2rem;
+}
+/*.bar .button.button-clear, .bar button.button-clear{
+    color: #FFFFff;
+    font-size: 25px;
+    margin-top: 10%;
+}*/
+.button-clear p{
+    margin-top: 30%;
+    font-size: 2rem;
+    color: #FFFFff;
+    font-weight: bold;
+}
+.button-clear p a{
+    margin-top: 30%;
+    font-size: 2rem;
+    color: #FFFFff;
+    font-weight: bold;
+}
+/*.bar .title{
+    height: 70px;
+    line-height: 70px;
+}*/
+/***********************头部***********************/
+.bar-positive2{height:5.5rem;background: #19adb9;}
+/*.bar-positive2 h2{padding-left: 10.8%;line-height: 5.5rem;font-size: 2rem;color: #f1f1f1;background: url("../images/返回按钮_03.png") no-repeat 4.44% center;background-size:1rem}*/
+/*******************蒙版模态层*********************/
+#xdd .set_model{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+/**********************设置页面*****************************/
+a{
+    text-decoration: none;
+}
+#xdd .setpage{
+    height: 100%;
+    background-color: #fafafa;
+}
+#xdd .setpage .setpage_main{
+    padding-top: 5.5rem;;
+}
+#xdd .setpage .setpage_main li{
+    background: #FFFFff;
+    height: 6.35rem;
+    line-height: 6.35rem;
+    padding-left: 4%;
+    position: relative;
+
+}
+#xdd .setpage .setpage_main li a {
+    color: #606060;
+    font-size: 1.7rem;
+}
+#xdd .setpage .setpage_main li:nth-child(1){
+    height: 7.1rem;
+    line-height: 7.1rem;
+    margin-top: 0.9rem;
+}
+#xdd .setpage .setpage_main li:nth-child(2){
+    height: 6.4rem;
+    line-height: 6.4rem;
+    margin-top: 1.7rem;
+
+}
+#xdd .setpage .setpage_main li:nth-child(2), #xdd .setpage .setpage_main li:nth-child(3){
+    border-bottom: 0.1rem solid #e1e1e1;
+}
+#xdd .setpage .setpage_main li:nth-child(3) span{
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: #2ac598;
+    border-radius: 50%;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    right: 3%;
+    top: 2.05rem;
+}
+#xdd .setpage .setpage_main li:nth-child(3):after{
+    content: "";
+    width: 5.25rem;
+    height: 1.9rem;
+    background-color: #d4f3ea;
+    position: absolute;
+    right: 3%;
+    top: 2.45rem;
+    border-radius: 1rem;
+}
+#xdd .setpage .setpage_main li:nth-child(5){
+    margin-top: 2.2rem;
+    border-bottom:0
+}
+#xdd .setpage .headerportrait{
+    position: absolute;
+    right: 8%;
+    top:  1.25rem;
+    width: 4.7rem;
+    height: 4.7rem;
+}
+#xdd .setpage .headerportrait img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#xdd .setpage .setpage_main li .upgrade-right{
+    position: absolute;
+    right: 7%;
+}
+#xdd .setpage .setpage_main li:nth-child(5):before{
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: #fb5e5e;
+    margin-left: 0.4rem;
+    display: block;
+    position: absolute;
+    top: 2.6rem;
+    left: 5rem;
+}
+
+/*******************修改头像***********************/
+#xdd .alter_portrait{
+    width: 74%;
+    height: 14.9rem;
+    background-color: #ffffff;
+    border-radius: 1.1rem;
+    position: absolute;
+    left: 12%;
+    top: 21rem;
+    z-index: 11;
+
+}
+#xdd .alter_portrait ul li{
+    line-height: 5rem;
+    height: 5rem;
+    padding-left: 12%;
+}
+#xdd .alter_portrait h2{
+    line-height: 5rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    color: #3d3d3d;
+    margin-bottom: 0;
+}
+#xdd .alter_portrait a{
+    color:  #606060;
+    font-size: 1.6rem;
+}
+#xdd .alter_portrait a img{
+    width: 11%;
+    height: 2.5rem;
+    margin-right: 4%;
+    display: inline-block;
+    float: left;
+    margin-top: 1.25rem;
+}
+/***********************确认退出**************************/
+#xdd .affirm_exit{
+    width: 73%;
+    height: 19.3rem;
+    background-color: #ffffff;
+    border-radius: 1.1rem;
+    position: absolute;
+    left: 12%;
+    top: 16.75rem;
+    z-index: 11;
+    text-align: center;
+}
+#xdd .affirm_exit h3{
+    line-height: 14.6rem;
+    height: 14.6rem;
+    border-bottom: 1px solid #959595;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#xdd .affirm_exit ul li{
+    float: left;
+    padding: 0 2rem;
+    height: 4.7rem;
+    line-height: 4.7rem;
+}
+#xdd .affirm_exit ul li a{
+    color: #303030;
+    font-size: 1.7rem;
+
+}
+#xdd .affirm_exit ul li:nth-child(1){
+    margin-left:14% ;
+}
+
+

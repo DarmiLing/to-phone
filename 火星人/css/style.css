@@ -1,0 +1,206 @@
+div,body,ul,li,ol,dt,dd,dl,p,a,i,span,h1,h2,h3,h4,h5,h6,img,b,strong,select,option,input,button,form,table,tr,th,td{padding:0; margin:0;}
+a{text-decoration: none;}
+a:hover{color:#ffba00;}
+li{list-style: none;}
+i{font-style:normal;}
+img,input,textarea,a,button{border:none;}
+textarea{resize: none;}
+button{background:none;}
+
+body,a{font-family: "微软雅黑","Arial"; font-size:12px;}
+.fl{float:left;}
+.fr{float: right;}
+.clearfix:after{
+    content:"";
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    *zoom: 1;
+}
+img{width:100%;}
+html{font-size: 62.5%;}
+/*my grades我的成绩样式*/
+.header{ height:18.14%; width: 100%; padding-top: 1.7rem;}
+.header .pic{ margin-left: 4.16%; margin-top:0.8rem; margin-right: 5.97%; width: 5.7rem; height: 5.7rem; border-radius: 50%; }
+.header .pic img{ width: 100%; height: 100%; border-radius: 50%;}
+.header .header-text h2{ line-height:3.55rem; font-size:2rem; color: #505050; font-weight: normal;}
+.header .header-text h2 span{ font-size: 1.2rem; line-height: 1.7rem; height: 1.7rem; width: 24.7%;
+    background: #19adb9; display:inline-block; color: #fff; border-radius:0.9rem; text-align: center; margin-left: 0.5%;}
+.header .header-text p{ line-height: 2.5rem; color:#707070; font-size: 1.4rem;}
+.header .header-text p strong{ padding-left:2%;}
+.major{ width: 100%; height: 19.6rem;  position: relative;}
+.major p{ color: #707070; font-size: 1.3rem; line-height: 2.8rem; padding-left: 13.3%;
+    background:#f4fcfe url("../images/我的成绩-(1)_07.png") no-repeat 6.17% 0.7rem; background-size:6% 1.6rem;}
+.major .pic01{position: absolute; left: 0; top:4.3rem; }
+.major .pic02{position: absolute; left: 0; bottom:1.5rem;}
+.major .ul01{width: 100%; position:absolute; left:0; bottom:11rem;}
+.major .ul01 li{float: left; width: 20%; color:#2ac598; font-size:1rem; text-align: center;}
+.major .ul01 .B{padding-top:1.3rem;}
+.major .ul01 .A{padding-bottom:2.3rem;}
+.major .ul02{width: 100%; height: 1.8rem; background: #2ac598; position: absolute; left: 0; bottom: 0;}
+.major .ul02 li{float: left; width: 20%; color: #fff; font-size: 1rem; text-align: center; line-height: 1.8rem;}
+.professional{ width: 100%; height: 30.85rem; background: #f7f7f7;}
+.professional .title{ color: #707070; font-size: 1.4rem; line-height:3.8rem; height:3.8rem; padding-left: 13.3%;
+    background: url("../images/我的成绩-(1)_10.png") no-repeat 6.17% 1.3rem;background-size:6% 1.6rem; padding-top:0.35rem;}
+.professional .center{ width: 91.94%; height: 1.7rem; background:rgba(0,0,0,0.05); border-radius: 6.5rem;  margin: 0 auto;}
+.professional .center>div{width:89%; height:1.7rem; background:#a0d9f2; border-radius: 6rem;}
+.professional .jibai{ width: 100%;  height: 19.7rem; margin-top:1.8rem; background: #2cc59c}
+.professional .jibai p{ padding-left:13.3%; background: url("../images/我的成绩-(1)_13.png") no-repeat 4.7% 0.6rem;
+    background-size:6.67% 2.4rem; color: #fff; line-height: 3.7rem; font-size: 1.8rem; border-bottom:2px solid #55ceb6;}
+.professional .jibai .pic{width: 87.5%; padding-top: 4.33%;}
+
+.footer{ position: fixed; bottom: 0; left: 0; height: 4.2rem; width: 100%;
+    background:#2da795; text-align: center; line-height: 4.2rem; }
+.footer img{ width: 6.6%; height: 1.25rem; overflow: hidden;margin: 0 auto; margin-top:1rem;}
+
+
+/*task grades作业成绩样式*/
+._bg{width: 100%; height:100%; position: relative;}
+._bg img{width: 100%; height:100%;}
+._bg .task_box{position:absolute; left:24.44%;top: 9.37%; z-index: 122; text-align: center;}
+._bg .task_box h2{line-height: 3.1rem; font-size: 3rem; font-weight:bold; color: #1d3462}
+._bg .task_box .p1{line-height:2.4rem; font-size: 2rem;  color: #1d3462}
+._bg .task_box .p2{line-height:4.7rem; font-size: 2rem; color: #606060;}
+._bg .task_box .p2 i{font-size: 4rem; color: #57d1ae; padding: 0 3.88%;}
+._bg form{position: absolute; left: 0; bottom: 8.9%; width: 100%;}
+._bg form button{width:43.19%; height:4.4rem;border-radius: 0.4rem; margin-left:1.45rem; color: #fff; font-size: 2.7rem; padding-left: 2.5rem;}
+._bg form .btn1{background:#19adb9; position: relative;}
+._bg form button img{position: absolute; left: 22%; top:30%; width: 13.5%; height: 47.7%;}
+._bg form .btn2{background:#fccb19; position: relative;}
+
+.modal{ width:100%;  height:100%;  background:#000;  position:fixed; top:0; left:0; z-index:10; opacity:0.7; margin:0 auto; }
+._bg .share{ width: 74.4%; height: 23rem; background: #ffffff; position:absolute; top:0; left:0; z-index:999; border-radius: 1.4rem;}
+
+._bg .share p{ line-height: 5.9rem; font-size: 2rem; text-align: center;}
+.share .share_p{line-height: 2.9rem; font-size: 2rem; text-align: center; margin-top:23%;}
+._bg .share ul{ width: 100%; display: -webkit-box; display: -webkit-flex;display:flex; justify-content: space-around;-webkit-justify-content:space-around;}
+._bg .share ul li img{ width: 4.3rem; height: 4.3rem;}
+._bg .share ul li  p{ line-height: 5.2rem; font-size: 1.3rem; color: #606060;}
+._bg .share input{ width: 100%; height: 4.3rem; background: #19adb9; position: absolute; bottom: 0; left: 0;
+    border-bottom-right-radius: 1.4rem; border-bottom-left-radius: 1.4rem; color: #fff; font-size: 3rem;}
+#share_Btn{width: 100%; height: 4.3rem; background: #2bc498; position: absolute; bottom: 0; left: 0;
+    border-bottom-right-radius: 1.4rem; border-bottom-left-radius: 1.4rem; color: #fff; font-size: 3rem;}
+._bg .link{ width: 50.8%; height: 7.2rem; background: rgba(0,0,0,0.4); position: absolute; text-align:center; line-height: 7.2rem; color: #fff;
+    border-radius: 0.6rem;font-size: 1.7rem;top:50%; left: 50%; transform:translate(-50%,-50%);}
+
+/*task grades职业素质分样式*/
+.pro_header{ width: 100%;  background: #19adb9 url("../images/back.png") no-repeat 4.7% 1.5rem;
+    background-size: 3.47% 2rem; color: #fff; line-height:5rem;}
+.pro_header span{ padding-left: 11.67%;  font-size: 2rem;}
+.pro_header a{ color: #fff;}
+.main{ height: 25.4rem; width: 100%; background: #f4f5f6; position:relative;}
+.main .pic01,.main .pic02,.main .text{ position:absolute;left: 50%;top: 50%; transform: translate(-50%,-50%);}
+.main .pic02:hover img{transform:rotate(315deg); transition:all 3s;}
+.main .text{text-align: center;color: #57d1ae; font-size: 1rem;}
+.main .text h1{font-size: 4rem; line-height: 4.4rem;}
+.ul{ width: 100%; background-color: transparent;}
+.ul ul{ border-bottom: 2px solid #bfbfbf ;font-size: 1.6rem;}
+.ul ul li{ float: left;}
+.ul ul:nth-child(1){ height: 8.3rem; width: 80%;padding:0 10%;
+    line-height: 8.3rem; color: #1d3462; display: flex;display: -webkit-flex;
+    justify-content: space-between; font-weight: 700;}
+.ul ul:nth-child(2){ height: 7.4rem; width: 90.8%; padding: 0 4.6%;line-height: 7.4rem;
+    color: #606060;display: flex;display: -webkit-flex;justify-content: space-between; -webkit-justify-content: space-between;}
+.ul ul:nth-child(3){ height: 6.2rem; width:90.8%; padding:0 4.6%;line-height:6.2rem;
+    color: #606060;display: flex;display: -webkit-flex;justify-content: space-between; }
+.ul ul:nth-child(4){ height: 8.5rem; width:90.8%; padding: 0 4.6%; line-height: 6.6rem;
+    color: #606060;display: flex;display: -webkit-flex;justify-content: space-between; border-bottom: none;}
+
+
+
+
+
+
+.top_nav{width: 100%;height: 5.5rem;position: relative; background-color: #19adb9; display: block;padding-left: 4%;}
+.top_nav .top_nav_l{ width: 100%; line-height: 5.5rem; background: url("../images/back.png") no-repeat left center; background-size: auto 40%;}
+.top_nav .top_nav_l a{color: #eaf4ff;padding-left: 9%;font-size: 2.125rem;}
+.top_nav .top_nav_r{float: left; position: absolute;top: 37%;right: -89%;width: 100%;height: 40%;}
+.top_nav .top_nav_r a{display: inline-block;width: 12%;padding-right: 6%;}
+.top_nav .top_nav_r2{float: left; position: absolute;top: 37%;right: -76%;width: 100%;height: 40%;}
+.top_nav .top_nav_r2 a{display: inline-block;width: 12%;padding-right: 6%;}
+.wrap{width: 96.4%;justify-content: space-between; margin: 0 auto;display: -webkit-flex;padding-top: 3%;}
+.box{width: 48.99%;}
+.con_t{padding-left: 1.4rem;}
+.wrap .box .con_t h3>img{width: 19%;height: 12.9%;}
+.con_t h3{font-size: 1.4rem;position: relative;border-bottom: 1px solid #efefef;padding: 8% 0;}
+.con_t h3 span{position: absolute;top:32.6%;left: 30.2%;}
+.con_t p{padding: 8% 0;}
+@media only screen and (min-width: 414px) {
+    html{font-size: 93.75%;}
+}
+/*------------------------Peking_Opera---------------------------*/
+
+.theme_1{position: absolute;height: 100%;width: 100%}
+.theme h3{font-size: 1.35rem;position: relative;padding: 2.7% 4%;display: block;width:48%;float: left;}
+.theme .theme_1 .theme_1_span{float: right;position: relative;padding-right: 4% ;width: 29.2%;top:1.5%}
+.theme .theme_1 .theme_1_span>img{position: relative;width: 16.9%;left: 7%; display: inline;}
+.theme .theme_1 .theme_1_span a{color: #bfbfbf;padding-left: 17%}
+.theme .con_t{padding-left: 1.4rem;}
+.theme .con_t h3{font-size: 1.4rem;position: relative;padding: 13% 0;top:1%;width:100%;}
+.theme .con_t h3>img{width: 10%;}
+.theme .con_t h3 span{position: absolute;top:41.6%;left: 14.2%;}
+
+
+
+/*--分享弹框--*/
+.modal{ width:100%;  height:100%;  background:#000;  position:fixed;  top:0;  left:0;  z-index:10; opacity:0.7; margin:0 auto;}
+.share{ width: 74.4%; height: 39.3%; background: #fff; position:absolute; top:0; left:0; z-index:999; border-radius: 1.4rem; bottom: 0; right: 0;  margin: auto auto;}
+.share p{ line-height: 5.9rem; font-size: 2rem; text-align: center;}
+.share ul{ width: 100%; display: -webkit-flex;display:flex; justify-content: space-around;-webkit-justify-content:space-around;}
+.share ul li img{ width: 4.3rem; height: 4.3rem;}
+.share ul li  p{ line-height: 5.2rem; font-size: 1.3rem; color: #606060;}
+.share .btn{ width: 100%; height:16.5%; background: #19adb9; position: absolute; bottom: 0; left: 0; border-bottom-right-radius: 1.4rem; border-bottom-left-radius: 1.4rem; line-height: 1.5rem;
+    text-align: center;}
+.share .btn a{font-size: 1.6rem;color: #fff;position: relative;top:20%;}
+
+
+/*按名字搜索作品样式--------------------------------------------------------------------------------------------*/
+.searchName_header{width:100%;height: 4.75rem;background: #19adb9;vertical-align: middle;padding-top: 1%;}
+.searchName_header img{position: absolute;left: 7.3%;top: 3.0%;width: 5.92%;z-index: 99;}
+.searchName_header input{width: 91.4%;height: 63.7%;border-radius: 6px;padding-left: 13.2%;position: relative;vertical-align: middle;margin: 2.78% 0 0 4%}
+
+.search_main .searchWord{padding-left: 7.6%}
+.search_main .searchWord h1{line-height: 4.325rem;font-size: 1.05rem;}
+.search_main .searchWord h2{color: #bfbfbf; line-height: 0}
+.search_main img{position: absolute;left: 0;bottom: 0; width: 100%}
+
+/*help*/
+#help .title{height: 2.7rem;background-color: #19adb9;border-bottom: 1px solid #addee2;line-height: 2.7rem;color: #fff;}
+#help .title span{padding:0 0.75rem;color: #fff;font-size: 1rem;}
+#help .title p{font-size: 1rem;color: #fff;}
+#help .content{height: 17.67rem;background-color: #f4f5f6;padding-top: 1.8rem;}
+#help .your-text{width: 27.8rem;height: 10.2rem;background-color: #fff;margin: 0 auto;border: 2px solid #dbdcdc;border-radius: 5px;
+    margin-bottom: 1.4rem;}
+#help .noHelp{line-height: 9.65rem;text-align: center;font-size: 0.7rem;}
+#help .content input{width: 29.8%;height: 2.725rem;margin: 0 auto;background-color: #9ad7db;margin: 0 auto!important;display: block;border-radius: 0.86rem;color: #fff;}
+#help .content input.helpMe{background-color:#19adb9;}
+.allhelp li{height: 3.75rem;border-bottom: 1px solid #eaeaea;}
+.allhelp li p{width: 33%;text-align: center;float: left;line-height: 3.75rem;height: 3.75rem;}
+.allhelp li p i{line-height: 0.5rem;display: block;padding-top: 1.25rem;font-size: 0.7rem;font-weight: 800;}
+.allhelp li p span{line-height: 2rem;display: block;font-size:0.5rem;}
+
+
+
+
+
+/*star*/
+.modal{width: 100%; height: 100%; background-color: #000; opacity: 0.3; position: fixed; left: 0; top: 0; z-index: 10;}
+.shareTo{width: 73.88%; height: 40.7%; border-radius: 40px; position: fixed; top: 31.4%; left: 13.55%; z-index: 20; background: #fff; overflow: hidden; text-align: center;}
+.shareTo ul{height: 65%; width: 100%; margin-top: 30%;}
+.shareTo ul li{float: left; text-align: center; height:19%; width:12.47%; background:url(../images/star_01.png) no-repeat 0 0; background-size: 100% 100%; margin: 0 6%}
+.shareTo .confirm{position: absolute; left: 0; bottom: 0; width: 100%; height: 4.3rem; background: #19adb9; color: #fff; font-size: 1.7rem; line-height: 4.3rem;}
+#four-star .ac{float: left; text-align: center; height:19%; width:12.47%; background:url(../images/star_03.png) no-repeat 0 0; background-size: 100% 100%; margin: 0 6%;}
+#request{display: inline-block; position: relative; left: 0; top: -95px; color: #bababa; font-size: 1.6rem; margin: 0 auto;}
+
+
+
+
+
+
+
+
+
+
+
+

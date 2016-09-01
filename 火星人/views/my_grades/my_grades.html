@@ -1,0 +1,51 @@
+<ion-view>
+    <ion-content overflow-scroll="true">
+        <div class="header clearfix" >
+            <div class="pic fl">
+                <img src="images/设置_07.png"/>
+            </div>
+            <div class="header-text">
+                <h2>李雷<span>总排名：11</span></h2>
+                <p>班级：1603期UI视觉设计师班1班</p>
+                <p>作业提交率：100% <strong>考勤率：97%</strong></p>
+            </div>
+        </div>
+        <div class="major">
+            <p>专业成绩</p>
+            <div  ng-click="blt()" id="_pic01" class="pic01"><img src="images/major_02.jpg"/></div>
+            <div class="pic02" ui-sref="task_grades"><a><img src="images/major_01.jpg"/></a></div>
+            <ul id="_ul01" class="ul01 clearfix" ng-show="cjfirm">
+                <li class="B">B+</li>
+                <li class="A">A-</li>
+                <li class="A">A-</li>
+                <li>H5响应式设计<br/>
+                    应用课<br/>
+                    A
+                </li>
+                <li class="B">B+</li>
+            </ul>
+            <ul class="ul02 clearfix">
+                <li>第二周</li>
+                <li>第三周</li>
+                <li>第四周</li>
+                <li>第五周</li>
+                <li>第六周</li>
+            </ul>
+        </div>
+        <div class="professional">
+            <p class="title">职业素质分</p>
+            <a ui-sref="professional">
+                <div class="center">
+                    <div></div>
+                </div>
+            </a>
+            <div class="jibai">
+                <p>击败了85%的同学</p>
+                <div class="pic"><img src="images/我的成绩_24.png"/></div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="footer" ui-sref="headportrait">
+        <img src="images/我的成绩-(1)_17.png"/>
+    </div>
+</ion-view>

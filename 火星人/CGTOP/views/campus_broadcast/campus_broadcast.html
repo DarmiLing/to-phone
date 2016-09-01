@@ -1,0 +1,66 @@
+<style>
+    html{
+        font-size: 62.5%;
+    }
+    .scroll-content2{
+        padding-top: 5.5rem;
+    }
+
+</style>
+<ion-nav-bar class="bar-positive2">
+    <ion-nav-buttons>
+        <button class="button2" ui-sref="CGTOP">
+            <a href="#">CGTOP</a>
+        </button>
+        <button class="button2" ui-sref="activity_inform">
+            <a href="#">活动通知</a>
+        </button>
+        <button class="button2 active" ui-sref="campus_broadcast">
+            <a href="#">校园通知</a>
+        </button>
+        <button class="button2" ui-sref="mail">
+            <a href="#">邮件</a>
+        </button>
+
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-view>
+    <ion-content class="scroll-content5">
+        <ul class="information_list">
+            <li ng-repeat="campu in campus" ui-sref="campus_particular">
+                <div class="t1">
+                    <h3 class="title fl">{{campu.title}}</h3>
+                    <span class="date1 fr">{{campu.date}}</span>
+                </div>
+                <div class="t2">
+                    {{campu.hyperlink}}
+                </div>
+                <div class="t3">
+                    {{campu.content}}
+                </div>
+            </li>
+        </ul>
+        <div class="mywlsy" ng-show="mywlsyfirm">
+            <img src="images/校园通知-无通知提醒.png" alt=""/>
+            <h3 class="hmsdxytz">还没有收到校园通知哦~还没有收到校园通知哦~还没有收到校园通知哦~</h3>
+        </div>
+
+    </ion-content>
+    <ion-footer-bar class="CGTOP_footer">
+        <ul class="icon_pic">
+            <li>
+                <img src="images/首页 未点亮.png" alt=""/>
+                <p>主页</p>
+            </li>
+            <li>
+                <img src="images/助手.png" alt=""/>
+                <p>助手</p>
+            </li>
+            <li ui-sref="CGTOP">
+                <img src="images/社区-选中_03.png" alt=""/>
+                <p>社区</p>
+            </li>
+
+        </ul>
+    </ion-footer-bar>
+</ion-view>

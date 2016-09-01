@@ -1,0 +1,25 @@
+<ion-nav-bar class="bar-positive2">
+    <ion-nav-buttons side="left" class="bar-dark2">
+        <button class="button-clear"  ui-sref="picture-albums">
+            <img class="return_img" src="images/返回按钮_03.png" alt=""/>
+
+        </button>
+        <button  class="button-clear xhjj" >
+            <h2 class="h2picture">预览</h2>
+        </button>
+        <button class="button-clear" ui-sref="headportrait">
+            <img class="duiGou" src="images/duigou-on.png">
+        </button>
+
+    </ion-nav-buttons>
+</ion-nav-bar>
+
+<ion-view id="getd">
+
+    <div class="setPicture">
+        <div class="picpreview" ng-repeat="image in images">
+                <img ng-attr-src="{{image.imgasebig}}">
+                <a href="javascript:"></a>
+        </div>
+    </div>
+</ion-view>

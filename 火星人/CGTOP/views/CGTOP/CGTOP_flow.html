@@ -1,0 +1,47 @@
+
+<ion-nav-bar class="bar-positive2">
+    <ion-nav-buttons side="left">
+        <button class="button3 button-icon ion-ios-arrow-back" ui-sref="CGTOP"></button>
+    </ion-nav-buttons>
+    <ion-nav-title class="title2" ui-sref="CGTOP">
+        CGTop
+    </ion-nav-title>
+</ion-nav-bar>
+
+
+<ion-view>
+
+    <ion-content id="tc" class="scroll-content2">
+
+            <div class="popup" ng-show="showConfirm">
+                <p>是否使用流量播放视频</p>
+                <ul class="popup_c">
+                    <li id="cancel" ng-click="Cancel()">取消</li>
+                    <li>|</li>
+                    <li id="confirm" ui-sref="CGTOP_play" ng-click="Confirm()">确定</li>
+                </ul>
+                <!--<div class="cancel">取消</div>
+                <span>|</span>
+                <div class="confirm">确定</div>-->
+            </div>
+
+        <div class="pop" ng-show="showModel"></div>
+        <div class="play_box">
+            <!-- 这些事件的使用你不要用原生的了 因为你都用了angularjs的东西了 那么最好是用他框架里面的 别轻易就用其他的 那我们来试试 -->
+            <img class="img1" src="images/CGtop_flow.gif" alt="" ng-click="test()"/>
+            <img class="play_pic" ng-click="test()" src="images/vioce_03.png" alt=""/>
+        </div>
+        <div class="ct_title2">
+            <h3>创意在哪里？</h3>
+            <div class="line_dashed"></div>
+        </div>
+        <div class="cy_content">
+            <p>
+                关注创意领域的实践和动态。在这里，您既可体验鲜
+                活而精彩的创意案例，聆听专家对创意难点问题的解
+                答，又可掌握实用工具，并紧扣前沿，与广大经理人
+                和精英切磋创意之道。
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

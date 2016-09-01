@@ -1,0 +1,25 @@
+<ion-view>
+    <ion-header-bar class="log_header ">
+        <img src="images/导航栏_02.png" alt="无法加载..."/>
+        <div class="log_header_backarrow" ui-sref="log"><img src="images/back.png" alt="无法加载..."/></div>
+        <p class="log_back"><a ui-sref="log">登录</a></p>
+
+    </ion-header-bar>
+    <ion-content overflow-scroll="true" class="has-header">
+        <form name="shippingForm" novalidate>
+            <div class="log_name">
+                <label>用户名</label>
+                <input name="name" class="form-control" ng-model="data.shipping.name" required/>
+                <span class="error" ng-show="shippingForm.name.$error.required && shippingForm.name.$dirty"></span>
+            </div>
+            <div class="log_name">
+                <label>密码</label>
+                <input type="password" name="password" class="form-control" ng-model="data.shipping.password" required/>
+                <span class="error" ng-show="shippingForm.password.$error.required && shippingForm.password.$dirty">用户名或密码错误</span>
+            </div>
+
+            <button class="button_log" ng-disabled="shippingForm.$invalid" type="button" ><a ui-sref="index">登录</a><img src="images/设置-密码设置-按钮_07.png" alt="" /></button>
+            <button class="button_password" type="button" ui-sref="new_password">忘记密码?</button>
+        </form>
+    </ion-content>
+</ion-view>

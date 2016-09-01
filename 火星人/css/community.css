@@ -1,0 +1,75 @@
+html {font-size: 62.5%;}
+.buttons ,.buttons-left ,.header-item ,.left-buttons{
+    width: 100%;
+}
+.bar.bar-positive2{
+    background: #19adb9;
+    height: 5.5rem;
+    border-bottom: 1px solid white;
+}
+.bar .button, .bar button.button2{
+    border: 0;
+    background: none;
+    float: left;
+    color: #FFFFff;
+    width: 25%;
+}
+.bar .button, .bar button.active{
+    border-bottom: 0.25rem solid white;
+    margin-bottom: -0.4rem;
+}
+.bar .button, .bar button.button2 a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: "微软雅黑";
+}
+
+
+#CGtop .profile li{
+    /*height: 16.8rem;*/
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#CGtop .profile li img{
+    display: block;
+    width: 100%;
+}
+#CGtop .profile li .content_black {
+     background: #000000;
+     opacity: 0.5;
+     width: 100%;
+     height: 100%;
+     display: block;
+     position: absolute;
+     left: 0%;
+     top: 0%;
+ }
+#CGtop .profile li .content_box1{
+    text-align: center;
+    width: 51.4%;
+    height: 7.8rem;
+    display: block;
+    border: 0.25rem solid white;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    z-index: 22;
+
+}
+
+#CGtop .profile li .content_box1 h3{
+    padding-top: 1rem;
+    font-family: "微软雅黑";
+    font-size: 1.7rem;
+    color: white;
+    line-height: 2.7rem;
+}
+#CGtop .profile li .content_box1 p{
+    font-family: "微软雅黑";
+    font-size: 1.4rem;
+    color: white;
+    line-height: 2.4rem;
+}

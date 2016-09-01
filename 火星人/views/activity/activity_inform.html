@@ -1,0 +1,101 @@
+
+<style>
+    html{
+        font-size: 62.5%;
+    }
+    .scroll-content2{
+        padding-top: 5.5rem;
+    }
+
+</style>
+<ion-nav-bar class="bar-positive2">
+    <ion-nav-buttons>
+        <button class="button2" ui-sref="CGTOP">
+            <a href="javascript:;">CGTOP</a>
+        </button>
+        <button class="button2 active" ui-sref="activity_inform">
+            <a href="javascript:;">活动通知</a>
+        </button>
+        <button class="button2" ui-sref="campus_broadcast">
+            <a href="javascript:;">校园通知</a>
+        </button>
+        <button class="button2" ui-sref="mail">
+            <a href="javascript:;">邮件</a>
+        </button>
+
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-view id="Act">
+    <ion-content class="scroll-content2">
+        <ul class="activity">
+            <li ng-repeat="activity1 in activity">
+                <div class="changtu"ui-sref="activity_particular">
+                    <div class="black_box" ng-show="showblack">
+                        <img id="xingzhuang" ng-show="showxz" src="images/activity/images/形状-13.png" alt=""/>
+                    </div>
+                    <img ng-click="alertBlack()" ng-src="{{activity1.imgurl}}" alt="" ui-sref="activity_particular"/>
+                </div>
+                <div class="content_bot" ui-sref="activity_particular">
+                    <h3 class="titile">
+                        {{activity1.title}}
+                    </h3>
+                    <p>
+                        {{activity1.content}}
+                    </p>
+                    <div class="hxsd fl">
+                        <img class="fl" src="images/定位.png" alt=""/>
+                        <span class="fl">{{activity1.position}}</span>
+                    </div>
+                    <div class="date fl">
+                        <img class="fl" src="images/时间.png" alt=""/>
+                        <span class="fl">{{activity1.date}}</span>
+                    </div>
+                </div>
+
+            </li>
+           <!--<li>
+                <div class="changtu">
+                    <img src="images/activity/images/活动通知1_02.png" alt=""/>
+                </div>
+                <div class="content_bot">
+                    <h3 class="titile">
+                        海报创意设计
+                    </h3>
+                    <p>
+                        海子团队讲解想法，带你卡开拓思维和想法
+                    </p>
+                    <div class="hxsd fl">
+                        <img class="fl" src="images/定位.png" alt=""/>
+                        <span class="fl">火星时代</span>
+                    </div>
+                    <div class="date fl">
+                        <img class="fl" src="images/时间.png" alt=""/>
+                        <span class="fl">16-5-15</span>
+                    </div>
+                </div>
+
+            </li>
+           -->
+        </ul>
+        <!--无限滚动-->
+        <!--<ion-infinite-scroll on-infinite="loadMore()" distance="1%" spinner="spiral">
+        </ion-infinite-scroll>-->
+    </ion-content>
+    <ion-footer-bar class="CGTOP_footer">
+        <ul class="icon_pic">
+            <li ui-sref="index">
+                <img src="images/首页 未点亮.png" alt=""/>
+                <p>主页</p>
+            </li>
+            <li ui-sref="help">
+                <img src="images/助手.png" alt=""/>
+                <p>助手</p>
+            </li>
+            <li ui-sref="CGTOP">
+                <img src="images/社区-选中_03.png" alt=""/>
+                <p>社区</p>
+            </li>
+
+        </ul>
+    </ion-footer-bar>
+</ion-view>

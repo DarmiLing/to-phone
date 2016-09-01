@@ -1,0 +1,87 @@
+<ion-nav-bar class="bar-positive2">
+    <ion-nav-buttons side="left" class="bar-positive2 bar-Borland">
+        <button class="button-clear ion-chevron-left"  ui-sref="index">
+
+    </button>
+        <button class="button-clear"  ui-sref="index" ng-click="select()">
+            <img class="portrait_img" src="images/back.png" alt=""  ui-sref="tab.timeline" />
+        </button>
+        <button  class="button-clear" ng-click="select()">
+            <p><a ui-sref="my_grades">设置</a></p>
+        </button>
+
+    </ion-nav-buttons>
+</ion-nav-bar>
+
+
+<ion-view id="xdd">
+
+  <!--  <ion-content id="tc" class="scroll-content2">-->
+
+
+        <!--蒙版模态层-->
+        <div class="set_model" ng-show="showModel"></div>
+
+        <!--设置页面-->
+        <div class="setpage">
+            <ul class="setpage_main">
+                <li ng-click="porrtrait()" >
+                    <div>
+                        <a>
+                            头像
+                            <div class="headerportrait"><img src="images/设置_07.png" alt=""/></div>
+                        </a>
+                    </div>
+                </li>
+                <li ui-sref="set_password">
+                    <a href="JavaScript:;">
+                        修改密码
+                    </a>
+                </li>
+                <li>
+                    <a href="JavaScript:;">
+                        消息通知<span></span>
+                    </a>
+                </li>
+                <li ng-click="exit()" >
+                    <a href="JavaScript:;">
+                        退出当前账号
+                    </a>
+                </li>
+                <li>
+                    <a href="JavaScript:;">
+                        升级<i></i><span class="upgrade-right">v.1.0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--修改头像-->
+        <div class="alter_portrait" ng-show="showRevamp">
+            <ul>
+                <li>
+                    <h2>修改头像</h2>
+                </li>
+                <li ui-sref="picture-albums" ng-click="select()">
+                    <a href="JavaScript:;"><img src="images/设置-选择_03.png" alt=""/>
+                        从相册中选择</a>
+                </li>
+                <li ui-sref="set-shot" ng-click="select()">
+                    <a href="JavaScript:;"><img src="images/设置-选择_07.png" alt=""/>拍照</a>
+                </li>
+            </ul>
+        </div>
+       <!--确认退出-->
+        <div class="affirm_exit" ng-show="showExit">
+            <h3>确认退出</h3>
+            <ul>
+                <li>
+                    <a ng-click="off()">取消</a>
+                </li>
+                <li>|</li>
+                <li ui-sref="log" ng-click="shutsdown()">
+                    <a href="javascript:;">确定</a>
+                </li>
+            </ul>
+        </div>
+   <!-- </ion-content>-->
+</ion-view>

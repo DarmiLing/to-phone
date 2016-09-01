@@ -1,0 +1,17 @@
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hr,blockquote,object,iframe,fieldset,input,legend,form,th,td{margin:0;padding:0}
+input,button{outline: none;cursor: pointer;}
+ul,ol,li{list-style:none}
+a{text-decoration:none}
+img,input,textarea{border:none;resize: none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+h1{font-size:24px}h2{font-size:20px}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{font-size:14px}
+i,b,em{font-style:normal;font-weight:normal}
+.fl{float:left}
+.fr{float:right}
+.clearfix:after{content: "";display: block;height:0;clear: both;font-size: 0;*zoom: 1;}
+html{font-size: 62.5%;}
+
+
+
+/*登录*/
+/*.register-modal{height: 667px;background: url(../images/register_bg.png) no-repeat 0 0 rgba(0,0,0,0.6);background-size: cover;}*/

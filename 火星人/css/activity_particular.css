@@ -1,0 +1,124 @@
+html{font-size: 62.5%;
+font-family: "微软雅黑";}
+/*活动通知详细页面*/
+.hdtzxy_pic{
+    display: block;
+    width: 100%;
+}
+.fenxiang_pic{
+    position: absolute;
+    right: 4%;
+    top: 1.5rem;
+    width: 9%;
+    display: block;
+    height: 50%;
+    z-index: 20;
+}
+.content_one{
+    height: 9rem;
+    border-bottom: 1px solid #d4d4d4;
+    padding-left: 4%;
+}
+.content_one h3{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-top: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+.content_one p{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.content_one .hxsd{
+    height: 3.2rem;
+    width: 55%;
+}
+
+.content_one .hxsd img{
+    width: 7%;
+    display: block;
+    margin-top: 1rem;
+    margin-right: 5%;
+}
+.content_one .hxsd span{
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+}
+
+
+.content_one .date{
+    height: 3.2rem;
+}
+.content_one .date img{
+    width: 12%;
+    display: block;
+    margin-top: 1rem;
+    margin-right: 5%;
+}
+
+.content_one .date span{
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+}
+
+
+
+.content_two{
+    padding-left: 4%;
+}
+.content_two h3{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-top: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+.content_two p{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.popup2{
+    height: 25rem;
+}
+.popup .title{
+    margin-top: 3rem;
+    font-family: "微软雅黑";
+    margin-bottom: 3.5rem;
+}
+.popup .icon_list{
+    height: 4.1rem;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+    margin-bottom: 3.8rem;
+}
+
+.popup .icon_list li{
+    float: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 4.1rem;
+    width: 25%;
+    text-align: center;
+}
+.popup .icon_list li .icon_pic{
+    display: block;
+    width: 100%;
+}
+.cancel{
+    clear: both;
+    height: 4.3rem;
+    clear: both;
+    background: #19adb9;
+    margin-top: 7.8rem;
+    color:white;
+    line-height: 4.3rem;
+    font-size: 1.8rem;
+}
+.icon_list p{
+    line-height: 3.4rem;
+    font-size: 1rem;
+    border-bottom: 0px;
+}

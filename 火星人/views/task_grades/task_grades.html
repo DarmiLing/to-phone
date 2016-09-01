@@ -1,0 +1,55 @@
+<ion-view>
+    <ion-content overflow-scroll="true">
+        <div class="_bg">
+            <img src="images/作业成绩.png"/>
+            <div class="task_box">
+                <h2>李雷</h2>
+                <p class="p1">在移动平台图标设计课中</p>
+                <p class="p2">击败了<i>95%</i>的同学</p>
+            </div>
+
+            <form>
+                <button class="btn1 fl" type="button" ng-click="bbn()"><img src="images/作业成绩_01_03.png"/>分享</button>
+                <button class="btn2 fl" type="button" ng-click="bbnn()"><img src="images/作业成绩_01_05.png"/>保存</button>
+            </form>
+
+            <div id="_modal" class="modal" ng-show="cjfirm"></div>
+            <!--分享弹框-->
+            <div class="share" id="_share" ng-show="cjfirm">
+                <p>分享到</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/作业成绩分享_03.png"/>
+                            <p>微信好友</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/作业成绩分享_05.png"/>
+                            <p>新浪微博</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/作业成绩分享_07.png"/>
+                            <p>朋友圈</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/作业成绩分享_09.png"/>
+                            <p>获取链接</p>
+                        </a>
+                    </li>
+                </ul>
+                <input id="_Btn" type="button" value="取消" ng-click="bbn_1()"/>
+            </div>
+
+            <!--链接弹框-->
+            <div class="link" id="_link" ng-show="_link" >
+                <p>已获取链接</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

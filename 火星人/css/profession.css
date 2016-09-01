@@ -1,0 +1,95 @@
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+ul,li,dd,dl{
+    padding: 0px;
+    margin: 0px;
+}
+
+.pane, .view ,#zyszf{
+        background: white;
+    height: 100%;
+}
+.title2{
+    line-height: 5.5rem;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    padding-left: 2rem;
+}
+
+
+.zhiyesuzhifen{
+    background:#f4f5f6;
+    height: 25rem;
+    margin-top: 1.9rem;
+}
+.zhiyesuzhifen img{
+    display: block;
+    width: 42%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7.2rem;
+
+}
+.button3 p {
+    margin-top: 11%;
+    font-size: 2rem;
+    color: #FFFFff;
+    font-weight: bold;
+}
+.center_number{
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6rem;
+    color: #57d1ae;
+    display: block;
+    position: absolute;
+    font-size: 4rem;
+}
+.text2{
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12.5rem;
+    color: #57d1ae;
+    display: block;
+    position: absolute;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.content_list{
+    height: 31rem;
+    background: white;
+}
+.content_list li{
+    height: 8.3rem;
+    border-bottom: 2px solid #bfbfbf;
+    display: block;
+    color: #606060;
+}
+.content_list li dl dd{
+    float: left;
+    text-align: center;
+    line-height: 8.3rem;
+}
+.content_list li dl dd:nth-child(1){
+    width: 29%;
+}
+
+.content_list li dl dd:nth-child(2){
+    width: 41.8%;
+}
+
+.content_list li dl dd:nth-child(3){
+    width: 29%;
+}
+.content_list li:nth-child(1){
+    color:#1d3462;
+}
+
+
+

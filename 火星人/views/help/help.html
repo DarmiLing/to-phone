@@ -1,0 +1,59 @@
+<ion-view class="light-bg tabs-icon-left" id="help">
+    <ion-header-bar class="top_nav" align-title="center">
+        <div class="top_nav_l">
+            <a ui-sref="index">火星助手</a>
+        </div>
+    </ion-header-bar>
+    <ion-content overflow-scroll="true">
+        <div class="content">
+            <textarea class="your-text" disabled></textarea>
+            <input type="submit" value="快来帮帮我" ui-sref="helpend" />
+        </div>
+
+        <ul class="allhelp" ng-show="help[0]">
+            <li>
+                <p>提交时间</p>
+                <p>处理状态</p>
+                <p>处理状态</p>
+            </li>
+            <li ng-repeat="hel in help">
+                <p><i>{{hel.time}}</i>
+                    <span>{{hel.date}}</span>
+                </p>
+                <p>{{hel.state}}</p>
+                <p ng-click="star_modal()">{{hel.assess}}</p>
+            </li>
+        </ul>
+        <div id="four-star" ng-show="star_show">
+            <a class="modal"  ui-sref="help"></a>
+
+            <div class="shareTo">
+                <ul id="star" class="clearfix">
+                    <li ng-class="_star[0]" ng-click="setFenshu(1)"></li>
+                    <li ng-class="_star[1]" ng-click="setFenshu(2)"></li>
+                    <li ng-class="_star[2]" ng-click="setFenshu(3)"></li>
+                    <li ng-class="_star[3]" ng-click="setFenshu(4)"></li>
+                </ul>
+                <span id="request">{{message}}</span>
+                <a class="confirm" ng-click="back_star()">确定</a>
+            </div>
+            </div>
+        <div class="noHelp" ng-show="!help[0]">还没有向火星发出任何求助信号哦~</div>
+    </ion-content>
+</ion-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+html,body{
+    font-size: 62.5%;
+    font-family: "微软雅黑";
+
+}
+
+
+/*校园广播*/
+.scroll-content5{
+    padding-top: 5.5rem;
+}
+.information_list{
+
+    padding-left: 4%;
+}
+.information_list .t1{
+    height: 2.2rem;
+
+}
+.information_list li{
+    margin-top: 2.3rem;
+    display: block;
+    height: 8.4rem;
+    border-bottom: 1px solid #eae9e9;
+}
+.information_list .t1 .title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+.information_list .date1{
+    font-size: 1.4rem;
+    display: block;
+    padding-top: 0.5rem;
+    margin-right: 6%;
+}
+.information_list .t2{
+    font-size: 1.4rem;
+    display: block;
+    line-height: 2.4rem;
+    color: #19adb9;
+}
+.information_list .t3{
+    font-size: 1.4rem;
+    display: block;
+    line-height: 2.1rem;
+}
+
+
+/*校园广播详细页*/
+.scroll-content5 .content_one2{
+    height: 7rem;
+    border-bottom: 1px solid #e2e0e0;
+    padding-left: 4%;
+    padding-right: 5%;
+    margin-top: 2rem;
+}
+.scroll-content5 .content1{
+    height: 7rem;
+
+}
+.scroll-content5 .content1{
+    height: 3rem;
+}
+ .scroll-content5 .cy_title2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.scroll-content5 .clj{
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: #19adb9;
+}
+.scroll-content5 .date1{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.scroll-content5 .article1{
+    padding-top: 2rem;
+    padding-left: 4%;
+    padding-right: 5%;
+}
+
+.scroll-content5 .article1 p{
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+}
+.mywlsy{
+    text-align: center;
+    WIDTH: 63%;
+    /* margin: 0 auto; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40%;
+}
+.mywlsy img{
+    width: 63%;
+    display: inline-block;
+}
+.scroll-content5 .hmsdxytz{
+    display: block;
+    font-size: 1.7rem;
+}

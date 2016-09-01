@@ -1,0 +1,33 @@
+<ion-nav-bar class="bar-positive2">
+    <ion-nav-buttons side="left" class="bar-dark2">
+        <button class="button-clear"  ui-sref="headportrait">
+            <img class="albums_img" src="images/设置-图片选择_03.png" alt=""/>
+
+        </button>
+        <button  class="button-clear xhjj" >
+            <h2 class="h2picture">相机胶卷</h2>
+            <img class="drop_down" src="images/drop_down.png" alt=""/>
+        </button>
+        <button class="button-clear" ui-sref="headportrait">
+            <img class="duiGou" src="images/duigou-on.png">
+        </button>
+
+    </ion-nav-buttons>
+</ion-nav-bar>
+
+
+
+<ion-view id="getd">
+
+    <div class="setPicture">
+        <ul class="photoAlbum">
+            <li ui-sref="set-shot">
+                <img src="images/设置-图片-拍照_15.png">
+            </li>
+            <li ng-repeat="image in images" ui-sref="preview">
+                <img ng-attr-src="{{image.imageurl}}">
+                <a href="javascript:"></a><i></i>
+            </li>
+        </ul>
+    </div>
+</ion-view>

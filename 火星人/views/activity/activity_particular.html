@@ -1,0 +1,71 @@
+
+<ion-nav-bar class="bar-positive2">
+    <ion-nav-buttons side="left">
+        <button class="button3 button-icon ion-ios-arrow-back" ui-sref="activity_inform">
+        </button>
+
+            <img ng-click="fenxiang()" src="images/activity/images/分享_03.png"  class="fenxiang_pic" alt=""/>
+
+    </ion-nav-buttons>
+    <ion-nav-title class="title2" ui-sref="activity_inform">
+        活动通知
+    </ion-nav-title>
+</ion-nav-bar>
+
+<ion-view>
+
+    <ion-content class="scroll-content2">
+
+        <div class="popup popup2" ng-show="showPopup2">
+            <h3 class="title">分享到</h3>
+            <ul class="icon_list">
+                <li>
+                    <img class="icon_pic" src="images/微信.png" alt=""/>
+                    <p>微信好友</p>
+                </li>
+                <li>
+                    <img class="icon_pic" src="images/新浪.png" alt=""/>
+                    <p>新浪微博</p>
+                </li>
+                <li>
+                    <img class="icon_pic" src="images/朋友圈.png" alt=""/>
+                    <p>朋友圈</p>
+                </li>
+                <li>
+                    <img class="icon_pic" src="images/连接.png" alt=""/>
+                    <p>获取链接</p>
+                </li>
+
+            </ul>
+            <!--<ul class="popup_c popup_c2">
+                <li id="cancel" ng-click="Cancel()">取消</li>
+                <li>|</li>
+                <li id="confirm" ui-sref="CGTOP_play" ng-click="Confirm()">确定</li>
+            </ul>-->
+           <div class="cancel" ng-click="showCancel()">取消</div>
+            <!--<span>|</span>
+           <div class="confirm">确定</div>-->
+        </div>
+        <div class="pop" ng-show="showModel"></div>
+        <img class="hdtzxy_pic" src="images/activity/images/活动通知详情页_02.png" alt=""/>
+        <div class="content_one">
+            <h3 class="title">海报创意设计</h3>
+            <p>海子团队讲解想法，带你卡开拓思维和想法</p>
+            <div class="hxsd fl">
+                <img class="fl" src="images/定位.png" alt=""/>
+                <span class="fl">火星时&nbsp;杏石口路81号</span>
+            </div>
+            <div class="date fl">
+                <img class="fl" src="images/时间.png" alt=""/>
+                <span class="fl">5-15&nbsp;16:00-18:30</span>
+            </div>
+        </div>
+        <div class="content_two">
+            <h3 class="title">海报创意设计</h3>
+            <p>海子团队讲解想法，带你卡开拓思维和想法</p>
+            <p>地址：北京市海淀区杏石口路81号&nbsp;&nbsp;火星时代</p>
+            <p>时间：2016.5.15&nbsp;&nbsp;16：00-18：30</p>
+        </div>
+    </ion-content>
+
+</ion-view>

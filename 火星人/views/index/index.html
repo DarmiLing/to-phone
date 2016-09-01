@@ -1,0 +1,97 @@
+<ion-view>
+    <ion-content class="index_ion-content_bg" overflow-scroll="true">
+        <div class="index_header">
+            <img class="index_header_bg" src="images/上部背景.png"/>
+            <div class="index_inner_left" ><a ui-sref="headportrait"><img src="images/首页_03.png" ></a></div>
+            <div class="index_inner_middle">
+                <h2 class="index_inner_middle_h2">李雷<span class="index_inner_middle_span">总排名: 11 </span></h2>
+                <p class="index_inner_middle_p">平均成绩: A-</p>
+                <p class="index_inner_middle_p">职业素质: 95</p>
+            </div>
+            <div class="index_inner_right" ng-click="qian()">
+                <img src="images/签到.png" ng-hide="qiandao">
+                <img src="images/签到激活.png" ng-show="qiandao">
+            </div>
+        </div>
+
+        <div id="_modal" class="modal" ng-show="qiandaoo"></div>
+        <!--分享弹框-->
+        <div class="share" id="_share" ng-show="qiandaoo" >
+            <p class="share_p">由于你已连续三天没有考勤记录<br/>为了避免可能发生的安全问题<br/>系统将要联系你的紧急联系人</p>
+            <input id="share_Btn" type="button" value="知道了" ng-click="qiann()"/>
+        </div>
+
+        <ion-slide-box class="index_banner" auto-play="true" slide-interval="3000"
+                       does-continue="true" show-pager="false">
+            <ion-slide class="index_imgbox">
+                <div class="index_box"><img src="images/图-船_03.png"></div>
+            </ion-slide>
+            <ion-slide class="index_imgbox">
+                <div class="index_box"><img src="images/图-船_03.png"></div>
+            </ion-slide>
+            <ion-slide class="index_imgbox" >
+                <div class="index_box"><img src="images/图-船_03.png"></div>
+            </ion-slide>
+            <ion-slide class="index_imgbox">
+                <div class="index_box"><img src="images/图-船_03.png"></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="index_mid_title clearfix">
+            <div class="index_mid_title_left fl">
+                <h2 class="index_h2"><img src="images/首页_18.png">我的作品</h2>
+            </div>
+            <div class="index_mid_title_right fr"><a ui-sref="index_littlebro">开启</a></div>
+        </div>
+        <div class="index_main clearfix">
+            <div class="index_main_left fl">
+                <div class="index_main_top"><img src="images/京剧盒子.png" alt="无法加载...."/></div>
+                <div class="index_main_bottom">
+
+                    <p>冯素素 <br/>1512期UI视觉设计师班1班</p>
+                </div>
+            </div>
+            <div class="index_main_right fl">
+                <div class="index_main_top"><img src="images/图 下右.png" alt="无法加载...."/></div>
+                <div class="index_main_bottom">
+
+                    <p>黄玉婷 <br/>1512期UI视觉设计师班1班</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="index_mid_title clearfix">
+            <div class="index_mid_title_left fl">
+                <h2 class="index_h2"><img src="images/首页_18.png">五星作品</h2>
+            </div>
+            <div class="index_mid_title_right fr"><a ui-sref="five_star">开启</a></div>
+        </div>
+
+        <div class="index_main clearfix">
+            <div class="index_main_left fl">
+                <div class="index_main_top"><img src="images/京剧盒子.png" alt="无法加载...."/></div>
+                <div class="index_main_bottom">
+
+                    <p>冯素素 <br/>1512期UI视觉设计师班1班</p>
+                </div>
+            </div>
+            <div class="index_main_right fl">
+                <div class="index_main_top"><img src="images/图 下右.png" alt="无法加载...."/></div>
+                <div class="index_main_bottom">
+
+                    <p>黄玉婷 <br/>1512期UI视觉设计师班1班</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </ion-content>
+    <ion-footer-bar class="index_footer">
+        <ul class="clearfix">
+            <li><a ui-sref="index"><img src="images/首页.png" alt="无法加载...."/><span>首页</span></a></li>
+            <li class="footer_li_mid"><a ui-sref="help"><img src="images/助手.png" alt="无法加载...."/><span>助手</span></a></li>
+            <li><a ui-sref="CGTOP"><img src="images/社区.png" alt="无法加载...."/><span>社区</span></a></li>
+
+        </ul>
+    </ion-footer-bar>
+</ion-view>

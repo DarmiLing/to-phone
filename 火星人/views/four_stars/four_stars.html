@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .modal{width: 100%; height: 100%; background-color: #000; opacity: 0.3; position: fixed; left: 0; top: 0; z-index: 10;}
+        .shareTo{width: 73.88%; height: 40.7%; border-radius: 40px; position: fixed; top: 31.4%; left: 13.55%; z-index: 20; background: #fff; overflow: hidden; text-align: center;}
+        .shareTo ul{height: 65%; width: 100%; margin-top: 30%;}
+        .shareTo ul li{float: left; text-align: center; height:19%; width:12.47%; background:url(../../images/star_01.png) no-repeat 0 0; background-size: 100% 100%; margin: 0 6%}
+        .shareTo .confirm{position: absolute; left: 0; bottom: 0; width: 100%; height: 4.3rem; background: #19adb9; color: #fff; font-size: 1.7rem; line-height: 4.3rem;}
+        #four-star .ac{float: left; text-align: center; height:19%; width:12.47%; background:url(../../images/star_03.png) no-repeat 0 0; background-size: 100% 100%; margin: 0 6%;}
+        #request{display: inline-block; position: relative; left: 0; top: -95px; color: #bababa; font-size: 1.6rem; margin: 0 auto;}
+        li{list-style: none;display: list-item;}
+        i{font-style:normal;}
+        body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hr,blockquote,object,iframe,fieldset,input,legend,form,th,td{margin:0;padding:0}
+        body,input,textarea,keygen,select,button,isindex{font:12px/24px Verdana,Tahoma,"宋体","\5FAE\8F6F\96C5\9ED1";color:#606060;word-break:break-all}
+        a{text-decoration:none}
+    </style>
+</head>
+<body id="four-star">
+<a class="modal"  ui-sref="help"></a>
+<div class="shareTo">
+    <ul id="star" class="clearfix">
+        <li id="hahaha"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <span id="request"></span>
+    <a class="confirm" ui-sref="help">确定</a>
+</div>
+<script>
+    var aUl = document.getElementById('star');
+    var aLi = aUl.getElementsByTagName('li');
+    var request = document.getElementById("request");
+    /* var aA=aLi.getElementsByTagName('a');*/
+
+    var sel=false;//判断是否选中过
+    var timer=null;
+
+    for(var i=0; i<aLi.length; i++){
+        aLi[i].index=i;//用“点”语法自定义索引属性
+
+        aLi[i].onclick=function(){//绑定鼠标事件
+//                    console.log(this.index);
+            clearTimeout(timer);
+            for(var j=0; j<aLi.length; j++){//循环判断
+                j<this.index+1? aLi[j].className="ac":aLi[j].className="";
+            }
+            sel=false;
+        };
+        //鼠标out的时候，判断sel状态是否选择过，如果没有选择就全部清空,鼠标移除五角星清除颜色
+        aLi[i].onmouseout=function(){
+            if(!sel){
+                timer=setTimeout(function(){
+                    for(var j=0; j<aLi.length; j++){
+                        aLi[j].className="";
+                    }
+                },500);
+            }
+        };
+
+        //鼠标点击，选择五星等级，标注sel状态为已选择,,鼠标移除五角星保留颜色
+        aLi[i].onclick=function(){
+            sel=true;
+            for(var j=0; j<aLi.length; j++){//循环判断
+                j<this.index+1? aLi[j].className="ac":aLi[j].className="";
+            }
+//                    console.log(this.index)
+            if(this.index + 1 == 1){
+                request.innerHTML = "辣鸡"
+            }else if(this.index + 1 == 2){
+                request.innerHTML = "很普通"
+            }else if(this.index + 1 == 3){
+                request.innerHTML = "比较满意"
+            }else if(this.index + 1 == 4){
+                request.innerHTML = "6666"
+            }
+        };
+    }
+</script>
+</body>
+</html>
